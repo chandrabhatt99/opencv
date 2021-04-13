@@ -1,10 +1,12 @@
 import cv2
 
 # Load the cascade
-face_cascade = cv2.CascadeClassifier('C:\\Users\\PRADEEP KUMAR\\Desktop\\open CV\\haarcascade_frontalface_default.xml')
+# write the address of haarcascade_frontalface_default.xml file
+face_cascade = cv2.CascadeClassifier('C:\\Users\\Desktop\\open CV\\haarcascade_frontalface_default.xml')
 
 # Read the input image
-img = cv2.imread('C:\\Users\\PRADEEP KUMAR\\Desktop\\open CV\\test1.jpg.jpg')
+#address of the image in which you want to test
+img = cv2.imread('C:\\Users\\Desktop\\open CV\\test1.jpg.jpg')
 
 # Convert into grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
